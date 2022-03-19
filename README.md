@@ -1,2 +1,2 @@
 # genum
-CLI for Random Number generation using
+CLI for Random Number generation
