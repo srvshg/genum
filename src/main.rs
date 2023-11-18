@@ -8,13 +8,13 @@ use generator::generate_random_number;
 fn main() {
     let app = App::new("Random Number Generator")
         .version("1.0")
-        .author("Your Name")
+        .author("Sarvesh Gulhane")
         .about("Generates a random number within a specified range")
         .arg(
             Arg::with_name("min")
                 .short('m')
                 .long("min")
-                .global(true) // Make this argument global
+                .global(true)
                 .takes_value(true)
                 .help("Minimum value of the range"),
         )
@@ -22,7 +22,7 @@ fn main() {
             Arg::with_name("max")
                 .short('M')
                 .long("max")
-                .global(true) // Make this argument global
+                .global(true)
                 .takes_value(true)
                 .help("Maximum value of the range"),
         )
@@ -30,7 +30,7 @@ fn main() {
             Arg::with_name("float")
                 .short('f')
                 .long("float")
-                .takes_value(false) // Make this argument global
+                .takes_value(false)
                 .help("Generate a floating-point number (only for 'genum', not subcommands)"),
         )
         .subcommand(SubCommand::with_name("odd").about("Generates a random odd number"))
