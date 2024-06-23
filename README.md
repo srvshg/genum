@@ -41,22 +41,28 @@ After installing or building Genum, you can use it from the command line. Here a
 
 Generate a random integer
 ```sh
-genum int
+genum
 ```
 
 Generate a random floating-point number
 ```sh
-genum float
+genum -f
 ```
 
 Customize the range of generated integers
 ```sh
-genum int --min 10 --max 100
+genum --min 10 --max 100
 ```
 
+Generate an even integer
+```sh
+genum even
+```
 
-
-
+Generate a odd integer
+```sh
+genum odd
+```
 
 
 
